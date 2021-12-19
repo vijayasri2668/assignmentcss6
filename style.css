@@ -1,0 +1,199 @@
+*{
+    margin: 10px;
+    padding: 0;
+}
+body{
+    background-color: yellow;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    position: relative;
+    animation-name: move;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: linear; */
+    animation-duration: 5s;
+    margin: 40px;
+    
+}
+@keyframes move{
+    0%{
+        transform: skewx(-15deg);
+
+    }
+    25%{
+        transform: skewx(15deg);
+       }
+    50%{
+        transform: skewx(-15deg);
+         }
+         75%{
+            transform: skewx(15deg);
+           }
+        100%{
+            transform: skewx(-15deg);
+             }
+}
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+        
+}
+.square1{
+    
+    width: 100px;
+    height: 100px;
+    background-color:gray;
+    animation-name: flip;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    margin: 40px;
+    
+}
+@keyframes flip{
+    0%{
+        transform: skewy(-20deg);
+    }
+   25%{
+        transform: skewy(20deg);
+    }
+    50%{
+        transform: skewy(-20deg); 
+    }
+    75%{
+        transform: skewy(20deg);
+    }
+    100%{
+        transform: skewy(-20deg);
+    }
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+        
+}
+.square2{
+    
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    position: relative;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    margin: 40px;
+    
+}
+@keyframes rotate{
+    from{
+        transform: rotate(-360deg); 
+        
+    }
+    to{
+        transform: rotate(360deg);   
+    }
+}
+
+.container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+        
+}
+.square3{
+    
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    border: 2px solid black;
+    position: relative;
+    animation-name: height;
+    animation-iteration-count: infinite;
+    
+    animation-duration: 5s;
+    margin: 40px;
+    
+}
+@keyframes height{
+    from{
+        height: 50px; 
+        
+    }
+    to{
+        height: 100px;   
+    }
+}
+
+.square4{
+    
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    position: relative;
+    animation-name: width;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    margin: 40px;
+    
+}
+@keyframes width{
+    from{
+        width: 50px; 
+        
+        
+    }
+    to{
+        width: 100px;   
+        
+    }
+}
+
+.square5{
+    
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 2px solid black;
+    position: relative;
+    animation-name: rotation;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 15s;
+    margin: 40px;
+    
+}
+@keyframes rotation{
+    0%{
+        transform: rotate(-90deg); 
+    }
+    25%{
+        transform: rotate(90deg);   
+    }
+    50%{
+        transform: rotate(-90deg);   
+    }
+    75%{
+        transform: rotate(90deg);   
+    }
+    100%{
+        transform: rotate(-90deg);   
+    }
+}
+a{
+    font-size: 30px;
+    margin-left: 580px;
+}
